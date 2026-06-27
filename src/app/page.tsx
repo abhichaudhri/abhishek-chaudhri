@@ -1,38 +1,19 @@
-import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
+import PageWrapper from "@/components/layout/PageWrapper";
+// import GoldmanStudy from "@/features/case-studies/GoldmanStudy";
+import Experience from "@/features/experience/Experience";
+import Hero from "@/features/hero/Hero";
+import Principles from "@/features/principles/Principles";
+import Projects from "@/features/projects/Projects";
 
 export default function Home() {
   return (
-    <MaxWidthWrapper>
+    <PageWrapper>
+      <Hero />
 
-      <div className="flex min-h-screen items-center justify-center">
-
-        <div className="space-y-6 text-center">
-
-          <p className="text-blue-500">
-            PORTFOLIO UNDER CONSTRUCTION
-          </p>
-
-          <h1 className="text-6xl font-bold tracking-tight">
-
-            Abhishek
-
-            <br />
-
-            Chaudhri
-
-          </h1>
-
-          <p className="mx-auto max-w-xl text-zinc-400">
-
-            Building high-performance frontend experiences
-            with React, TypeScript and scalable architecture.
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </MaxWidthWrapper>
+      <Principles />
+      <Experience />
+      {/* <GoldmanStudy /> */}
+      <Projects />
+    </PageWrapper>
   );
 }

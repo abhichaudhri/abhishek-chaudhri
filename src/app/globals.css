@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 :root {
-
   --background: #09090b;
-
   --foreground: #fafafa;
 
   --card: #18181b;
@@ -12,13 +10,7 @@
 
   --primary: #2563eb;
 
-  --secondary: #60a5fa;
-
   --muted: #a1a1aa;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html {
@@ -26,28 +18,44 @@ html {
 }
 
 body {
-
   margin: 0;
-
   background: var(--background);
-
   color: var(--foreground);
 
-  font-family: var(--font-geist-sans);
-
   overflow-x: hidden;
+
+  font-family: var(--font-geist-sans);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
+* {
+  box-sizing: border-box;
 }
 
 ::selection {
-  background: #2563eb;
+  background: var(--primary);
   color: white;
+}
+
+.grid-background {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .05) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
+      rgba(255, 255, 255, .05) 1px,
+      transparent 1px);
+
+  background-size: 48px 48px;
+}
+
+.noise {
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .03;
+
+  pointer-events: none;
+
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
 }

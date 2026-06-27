@@ -4,11 +4,18 @@ interface Props {
     children: ReactNode;
 }
 
-export default function MaxWidthWrapper({
+export default function PageWrapper({
     children,
 }: Props) {
     return (
-        <main className="mx-auto max-w-[1440px]">
+        <main
+            className="
+      relative
+      overflow-hidden
+      bg-black
+      text-white
+      "
+        >
             {children}
         </main>
     );

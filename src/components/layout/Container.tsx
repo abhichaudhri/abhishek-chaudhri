@@ -8,7 +8,16 @@ export default function Container({
     children,
 }: Props) {
     return (
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <div
+            className="
+      mx-auto
+      w-full
+      max-w-7xl
+      px-6
+      lg:px-8
+      xl:px-10
+    "
+        >
             {children}
         </div>
     );

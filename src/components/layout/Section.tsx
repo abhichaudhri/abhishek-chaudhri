@@ -12,7 +12,7 @@ export default function Section({
     return (
         <section
             id={id}
-            className="py-28"
+            className="py-32"
         >
             {children}
         </section>
