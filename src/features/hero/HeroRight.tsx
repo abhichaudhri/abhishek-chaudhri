@@ -19,7 +19,7 @@ export default function HeroRight() {
                 duration: .8,
                 delay: .3
             }}
-            className="hidden lg:block"
+            className="order-first mx-auto w-full max-w-xl lg:order-last"
         >
 
             <PerformanceDashboard />

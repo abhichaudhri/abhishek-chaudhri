@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 import PageWrapper from "@/components/layout/PageWrapper";
 import Contact from "@/features/contact/Contact";
 // import GoldmanStudy from "@/features/case-studies/GoldmanStudy";
@@ -11,6 +12,7 @@ import Skills from "@/features/skills/skills";
 export default function Home() {
   return (
     <PageWrapper>
+      <Navbar />
       <Hero />
 
       <Principles />

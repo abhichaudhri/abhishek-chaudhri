@@ -1,20 +1,15 @@
 export default function Footer() {
     return (
-        <footer
-            className="
-      border-t
-      border-zinc-900
-      py-10
-      text-center
-      text-sm
-      text-zinc-500
-      "
-        >
-            Designed & Built by Abhishek Chaudhri
+        <footer className="border-t border-zinc-900 py-10">
+            <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-zinc-500 md:flex-row">
+                <p>
+                    © {new Date().getFullYear()} Abhishek Chaudhri.
+                </p>
 
-            <br />
-
-            React • Next.js • TypeScript • Framer Motion
+                <p>
+                    Built with Next.js, React, TypeScript & Tailwind CSS.
+                </p>
+            </div>
         </footer>
     );
 }

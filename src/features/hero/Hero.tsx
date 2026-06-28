@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <section className="
 relative
-min-h-screen
+min-h-screen pt-20
 overflow-hidden
 ">
             <BackgroundGlow />
@@ -17,13 +17,7 @@ overflow-hidden
             <Container>
 
                 <div
-                    className="
-          grid
-          min-h-screen
-          items-center
-          gap-20
-          lg:grid-cols-2
-          "
+                    className="grid items-center gap-20 lg:grid-cols-2"
                 >
 
                     <HeroLeft />

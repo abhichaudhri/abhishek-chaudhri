@@ -10,11 +10,11 @@ export default function Projects() {
         <Section id="projects">
             <Container>
                 <p className="uppercase tracking-[0.3em] text-blue-400">
-                    Featured Work
+                    Highlighted Engineering Work
                 </p>
 
                 <h2 className="mt-4 text-6xl font-black">
-                    Selected engineering work.
+                    Engineering challenges I've enjoyed solving.
                 </h2>
 
                 <p className="mt-8 max-w-3xl text-xl text-zinc-400 leading-9">
@@ -22,7 +22,7 @@ export default function Projects() {
                     engineering, performance optimization and scalable architecture.
                 </p>
 
-                <div className="mt-20 grid gap-8 lg:grid-cols-3">
+                <div className="mt-20 grid gap-8 lg:grid-cols-2">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.title}

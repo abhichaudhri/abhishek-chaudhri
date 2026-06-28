@@ -6,18 +6,27 @@ export const experiences = [
 
         duration: "Jun 2025 — Present",
 
-        projects: [
-            "Client Onboarding Platform",
-
-            "Maker Checker Workflow",
-
-            "Enterprise Grid Performance",
-
-            "Reusable Frontend Infrastructure",
-        ],
+        location: "Bengaluru, India",
 
         summary:
-            "Leading frontend architecture, UI performance and reusable engineering systems across enterprise onboarding applications.",
+            "Sole Frontend Engineer for the Client Onboarding team, leading frontend architecture, performance optimization and reusable engineering infrastructure across multiple enterprise applications.",
+
+        achievements: [
+            "Enterprise Grid Performance (100K+ records)",
+            "Maker–Checker Governance Platform",
+            "Enterprise React Performance Optimization",
+            "Reusable Frontend Platform & Custom Hooks",
+            "Proxy-based Development Framework",
+        ],
+
+        tech: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "IndexedDB",
+            "REST APIs",
+            "Performance",
+        ],
     },
 
     {
@@ -27,17 +36,26 @@ export const experiences = [
 
         duration: "Jan 2021 — Apr 2025",
 
-        projects: [
-            "Hospitality Distribution Platform",
+        location: "Hyderabad, India",
 
-            "React Migration",
+        summary:
+            "Built enterprise hospitality applications while modernizing legacy Oracle JET applications into React and TypeScript, improving maintainability, testing and frontend architecture.",
 
-            "Performance Improvements",
-
+        achievements: [
+            "Legacy Application Modernization",
+            "40+ Screens Migrated",
+            "Reusable Component Library",
+            "Frontend Quality Engineering",
             "Testing Infrastructure",
         ],
 
-        summary:
-            "Built enterprise hospitality applications using React, TypeScript and Oracle JET while modernizing legacy systems.",
+        tech: [
+            "React",
+            "TypeScript",
+            "Oracle JET",
+            "Jest",
+            "Cypress",
+            "CI/CD",
+        ],
     },
 ];

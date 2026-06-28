@@ -2,13 +2,12 @@
 
 import { motion } from "framer-motion";
 
-const words = [
-    "Building",
-    "frontend",
-    "experiences",
-    "that",
-    "feel",
-    "effortless.",
+const lines = [
+    "Hi, I'm",
+    "Abhishek.",
+    "I build fast,",
+    "scalable frontend",
+    "applications.",
 ];
 
 const container = {
@@ -39,9 +38,9 @@ export default function AnimatedHeadline() {
             animate="show"
             className="mt-8"
         >
-            {words.map((word) => (
+            {lines.map((line) => (
                 <motion.div
-                    key={word}
+                    key={line}
                     variants={item}
                     transition={{
                         duration: 0.8,
@@ -61,7 +60,7 @@ export default function AnimatedHeadline() {
             md:text-8xl
             "
                     >
-                        {word}
+                        {line}
                     </h1>
                 </motion.div>
             ))}

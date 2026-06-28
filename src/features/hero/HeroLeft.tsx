@@ -39,9 +39,9 @@ export default function HeroLeft() {
         text-zinc-400
       "
             >
-                I build enterprise-grade frontend applications focused on
-                performance, scalable architecture, developer experience and
-                beautiful user interfaces.
+                Currently building enterprise frontend applications at Goldman Sachs,
+                specializing in React, Next.js, TypeScript and frontend performance.
+                Passionate about creating scalable UI architectures and delightful user experiences.
             </motion.p>
 
             <motion.div

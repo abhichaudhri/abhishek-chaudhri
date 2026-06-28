@@ -1,24 +1,23 @@
 "use client";
 
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HeroButtons() {
     const handleProjects = () => {
-        document
-            .getElementById("projects")
-            ?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-    };
+        const section = document.getElementById("projects");
 
-    const handleResume = () => {
-        const link = document.createElement("a");
-        link.href = "/Abhishek_Akshay_Chaudhri.pdf";
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.click();
+        if (!section) return;
+
+        const y =
+            section.getBoundingClientRect().top +
+            window.scrollY -
+            90;
+
+        window.scrollTo({
+            top: y,
+            behavior: "smooth",
+        });
     };
 
     return (
@@ -37,22 +36,6 @@ export default function HeroButtons() {
             >
                 View Projects
                 <ArrowRight size={18} />
-            </motion.button>
-
-            <motion.button
-                type="button"
-                whileHover={{
-                    scale: 1.04,
-                    y: -2,
-                }}
-                whileTap={{
-                    scale: 0.97,
-                }}
-                onClick={handleResume}
-                className="flex items-center gap-3 rounded-2xl border border-zinc-800 bg-zinc-900/80 px-8 py-4 backdrop-blur-xl transition-colors hover:border-blue-500 hover:bg-zinc-800"
-            >
-                Resume
-                <Download size={18} />
             </motion.button>
         </div>
     );

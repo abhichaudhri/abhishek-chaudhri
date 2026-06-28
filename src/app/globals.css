@@ -32,7 +32,7 @@ body {
 }
 
 ::selection {
-  background: var(--primary);
+  background: rgb(37 99 235);
   color: white;
 }
 
@@ -58,4 +58,25 @@ body {
   pointer-events: none;
 
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
 }
