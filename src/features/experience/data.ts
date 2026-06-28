@@ -9,7 +9,7 @@ export const experiences = [
         location: "Bengaluru, India",
 
         summary:
-            "Sole Frontend Engineer for the Client Onboarding team, leading frontend architecture, performance optimization and reusable engineering infrastructure across multiple enterprise applications.",
+            "Frontend Engineer for the Private Wealth Management team, leading frontend architecture, performance optimization and reusable engineering infrastructure across multiple enterprise applications.",
 
         achievements: [
             "Enterprise Grid Performance (100K+ records)",
